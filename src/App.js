@@ -1,16 +1,13 @@
 import React from 'react';
-import { observer } from 'mobx-react';
 import './App.css';
-// import Page1 from './pages/page1';
-import store from './store';
+import Page1 from './pages/page1';
 
-let App = observer(({ appState }) => {
+function App() {
   return (
     <div className="App">
-      {/* <Page1 /> */}
-      {store.timer}
+      <Page1/>
     </div>
   );
-});
+};
 
 export default App;
